@@ -4,7 +4,7 @@ const Event = ({event}) => {
   const [showDetails, SetShowDetails] = useState(false);
 
   return (
-    <li>
+    <li className="event-item">
       <h1 className="summary">{event.summary}</h1>
       <p className="location">{event.location}</p>
       <p className="start-time">{event.created}</p>
@@ -12,7 +12,7 @@ const Event = ({event}) => {
         <p className="details">{event.description}</p>
       ) : null}
 
-      <button  onClick={() => SetShowDetails(!showDetails)}>{showDetails ? "Hide details" : "Show details"}</button>
+      <button className="details-btn"  onClick={() => SetShowDetails(!showDetails)}>{showDetails ? "Hide details" : "Show details"}</button>
     </li>
     
     
