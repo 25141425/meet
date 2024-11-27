@@ -25,7 +25,7 @@ defineFeature(feature, test => {
     
     let EventNumberComponent;
     given('the user is on the events page', () => {
-      EventNumberComponent = render(<NumberOfEvents currentNOE={32} setCurrentNOE={() => {}} />);
+      EventNumberComponent = render(<NumberOfEvents currentNOE={32} setCurrentNOE={() => {}} setErrorAlert={() => { }} />);
     });
 
     when('the user specifies a number of events to display', async () => {

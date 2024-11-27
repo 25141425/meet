@@ -111,3 +111,11 @@ input[type="number"] {
   margin: 20px;
   line-height: 1.5rem;
 }
+
+.alerts-container {
+  position: fixed;
+  top: 0px;
+  left: 20px;
+  width: 250px;
+  z-index: 1000;
+}
