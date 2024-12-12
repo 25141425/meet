@@ -32,22 +32,25 @@ class Alert extends Component {
   }
 }
 
+// When city can't be found
 class InfoAlert extends Alert {
   constructor(props) {
     super(props);
-    this.color = 'rgb(0, 0, 255)'; 
+    this.color = 'rgb(255, 255, 255)'; 
     this.bgColor = 'rgb(220, 220, 255)'; 
   }
 }
 
+// When number of events = 0 
 class ErrorAlert extends Alert {
   constructor(props) {
     super(props);
-    this.color = '#fe0000'; 
+    this.color = '#ffffff'; 
     this.bgColor = '#ff7b5a'; 
   }
 }
 
+// When user is offline
 class WarningAlert extends Alert {
   constructor(props) {
     super(props);
